@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Which attribute should have a tag in order to show a title tooltip as default?",
+        "answer": "1",
+        "options": [
+            "It is not possible, you have to use JS",
+            "Title attribute",
+            "Tooltip attribute",
+            "Name attribute"
+        ]
+    },
+    {
+        "question": "What is Flexbox?",
+        "answer": "2",
+        "options": [
+            "A Tag HTML",
+            "a HTML alignment",
+            "A layout specification for css",
+            "A HTML attribute"
+        ]
+    },
+    {
+        "question": "'iPariksha is the practical Pariskha. Ipariksha is more Pariksha'.replace('Pariksha','test') output string will be",
+        "answer": "2",
+        "options": [
+            "'itest is the practical test. Ipariksha is more test'",
+            "'itest is the practical test. Itest is more test'",
+            "'itest is the practical Pariskha. Ipariksha is more Pariksha'",
+            "'iPariksha is the practical test. Ipariksha is more test'"
+        ]
+    },
+    {
+        "question": " What mean of the a in RGBa?",
+        "answer": "1",
+        "options": [
+            "alpha",
+            "alpha color",
+            "arrow",
+            "any"
+        ]
+    },
+    {
+        "question": "What is scope?",
+        "answer": "0",
+        "options": [
+            "A angular function to create methods",
+            "A controller to be used in a component",
+            "A build in object, which contains application data and methods",
+            "None"
+        ]
+    }
+]

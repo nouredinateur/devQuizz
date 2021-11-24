@@ -1,0 +1,220 @@
+{
+    "quiz": [
+        {
+            "question": "Which attribute should have a tag in order to show a title tooltip as default?",
+            "answer": "1",
+            "options": [
+                "It is not possible, you have to use JS",
+                "Title attribute",
+                "Tooltip attribute",
+                "Name attribute"
+            ]
+        },
+        {
+            "question": "What is difference between ul and ol?",
+            "answer": "0",
+            "options": [
+                "OL element is a numbered list and UL is a list of points",
+                "It is the same behavior",
+                "None of these is a list",
+                "UL element is a numbered list and ol is list of points "
+            ]
+        },
+        {
+            "question": "What is block element?",
+            "answer": "2",
+            "options": [
+                "An Element that a specific size",
+                "A divisor element",
+                "A HTML element that occupies 100% of the hieght ot its container",
+                "A HTML element that occupies 100% of the width ot its container"
+            ]
+        },
+        {
+            "question": "Name three new tag from HTML5 that different from canvas?",
+            "answer": "1",
+            "options": [
+                "div, img, ul",
+                "Aside, figure, h1",
+                "Article aside and nav",
+                "Header, div, a"
+            ]
+        },
+        {
+            "question": "What is purpose of run method on Angular?",
+            "answer": "0",
+            "options": [
+                "It is executed after the injector is created and are used to kickstart the application",
+                "It's to extend the logic of each controller",
+                "It's a method to load any data",
+                "None"
+            ]
+        },
+        {
+            "question": "What is scope?",
+            "answer": "0",
+            "options": [
+                "A angular function to create methods",
+                "A controller to be used in a component",
+                "A build in object, which contains application data and methods",
+                "None"
+            ]
+        },
+        {
+            "question": "What is Flexbox?",
+            "answer": "2",
+            "options": [
+                "A Tag HTML",
+                "a HTML alignment",
+                "A layout specification for css",
+                "A HTML attribute"
+            ]
+        },
+        {
+            "question": "Which is the purpose of translate property on CSS3?",
+            "answer": "2",
+            "options": [
+                "It is not a CSS property",
+                "It is for translate texts",
+                "It is to reposition an element in horizontal and veritical direction",
+                "None"
+            ]
+        },
+        {
+            "question": " What mean of the a in RGBa?",
+            "answer": "1",
+            "options": [
+                "alpha",
+                "alpha color",
+                "arrow",
+                "any"
+            ]
+        },
+        {
+            "question": "Can you set multiple box-shadows?",
+            "answer": "1",
+            "options": [
+                "Yes",
+                "No"
+            ]
+        },
+        {
+            "question": "How do four values work on padding",
+            "answer": "3",
+            "options": [
+                "top, bottom, left, right",
+                "up, down, front, behind",
+                "top, right, bottom, left",
+                "left, right, right, left"
+            ]
+        },
+        {
+            "question": "Which of the following property is used to underline color change.",
+            "answer": "2",
+            "options": [
+                "text-decoration",
+                "text-decoration-color",
+                "text-decoration-style",
+                "text-decoration-line"
+            ]
+        },
+        {
+            "question": "Can we set the float center?",
+            "answer": "2",
+            "options": [
+                "Yes",
+                "No"
+            ]
+        },
+        {
+            "question": "In CSS, what is the correct option to select only the heading with class name 'success'?",
+            "answer": "2",
+            "options": [
+                "#success { }",
+                ".success { }",
+                "success { }",
+                ".class success {}"
+            ]
+        },
+        {
+            "question": "What is Closure?",
+            "answer": "2",
+            "options": [
+                "Callback",
+                "Module",
+                "Function",
+                "Service"
+            ]
+        },
+        {
+            "question": "typeof null",
+            "answer": "1",
+            "options": [
+                "object",
+                "undefined",
+                "function",
+                "string"
+            ]
+        },
+        {
+            "question": "'iPariksha is the practical Pariskha. Ipariksha is more Pariksha'.replace('Pariksha','test') output string will be",
+            "answer": "2",
+            "options": [
+                "'itest is the practical test. Ipariksha is more test'",
+                "'itest is the practical test. Itest is more test'",
+                "'itest is the practical Pariskha. Ipariksha is more Pariksha'",
+                "'iPariksha is the practical test. Ipariksha is more test'"
+            ]
+        },
+        {
+            "question": "How can add a row using SQL in a database ?",
+            "answer": "2",
+            "options": [
+                "ADD",
+                "CREATE",
+                "INSERT",
+                "MAKE"
+            ]
+        },
+        {
+            "question": "The command to remove rows from a table 'QUESTIONS' is?",
+            "answer": "2",
+            "options": [
+                "REMOVE FROM QUESTIONS",
+                "DROP FROM QUESTIONS",
+                "DELETE FROM QUESTIONS WHERE ..",
+                "UPDATE FROM QUESTIONS"
+            ]
+        },
+        {
+            "question": "The SQL WHERE clause:?",
+            "answer": "1",
+            "options": [
+                "limits the column data that are returned",
+                "limits the row data are returned.",
+                "Both A and B are correct.",
+                "Neither A nor B are correct."
+            ]
+        },
+        {
+            "question": "Which of the following is the original purpose of SQL?",
+            "answer": "3",
+            "options": [
+                "To specify the syntax and semantics of SQL data definition language",
+                "To specify the syntax and semantics of SQL manipulation language",
+                "To define the data structures",
+                "All of above"
+            ]
+        },
+        {
+            "question": "A view is which of the following?",
+            "answer": "0",
+            "options": [
+                "A virtual table that can be accessed via SQL commands",
+                "A virtual table that cannot be accessed via SQL commands",
+                "A base table that can be accessed via SQL commands",
+                "A base table that cannot be accessed via SQL commands"
+            ]
+        }
+    ]
+}

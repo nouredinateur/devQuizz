@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/21917d46d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Quizzes</title>
+</head>
+
+<body>
+    <div class="bg-white-700 w-full h-screen pt-60">
+       
+        <div id="quiz" class="bg-white mb-30 w-2/5 h-auto p-10 mx-auto shadow-lg rounded-2xl">
+            <div>
+                <div id="end" class="flex-center flex-column">
+                    <div>
+                        <span class="font-bold text-lg">Final score:</span><h1 id="finalScore">0</h1>
+                    </div>
+                    <form class="end-form-container my-6">
+                        <h2 class="my-4" id="end-text">Enter your name below to save your score!</h2>
+                        <input class="h-12 w-3/4 rounded-md shadow" type="text" name="name" id="username" placeholder="Enter your name">
+                        <button class="shadow rounded-md p-3 text-white bg-purple-500" id="saveScoreBtn" type="submit" onClick="saveHighScore(event)" disabled>Save</button>
+                    </form>
+                    <a href="game.html" class="shadow rounded-md bg-purple-500 text-white p-3">Play Again</a>
+                    <a href="index.html" class=" p-3 shadow rounded-md bg-blue-500 text-white"  >Go home <i class="fas fa-home"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="end.js"></script>
+</html>

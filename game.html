@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/21917d46d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <title>Quizzes</title>
 </head>
 <style>
+body{
+    background-color: #5B45C0;
+}
+#game{
+    background-color: #F9F8F9;
+    font-family: 'Comfortaa', cursive;
+}
+#question{
+    color: black;
+}
+#bar{
+    background-color: #FC9C28;
+}
+#timeBar{
+    background-color: #FC9C28;
 
+}
 .correct {
-    background-color: green;
+    background-color: #FC9C28;
     color: white
 }
 
@@ -19,59 +38,89 @@
     background-color: red;
     color: white;
 }
+#timer{
+    color: #FC9C28;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', cursive;
 
+}
 </style>
 <body>
     <div class="bg-white-700 w-full h-screen pt-60">
-       
-        <div id="game" class="bg-white mb-30 w-2/5 h-auto p-10 mx-auto shadow-lg rounded-2xl">
+        <div class="mx-auto text-center">
+            <p class="text-center animate-bounce	" id="timer">Ready</p>
+            
+        </div>
+        <div id="game" class="bg-white mb-30 w-2/5 h-auto p-10 mx-auto shadow-lg rounded-3xl	">
+            <div class="my-4 w-1/5 mx-auto">
+                <div class="relative pt-1">
+                    <div class="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
+                      <div id="timeBar"
+                        style="width: 0%"
+                        class="
+                          shadow-none
+                          flex flex-col
+                          text-center
+                          whitespace-nowrap
+                          text-white
+                          justify-center
+                          bg-purple-500
+                        "
+                      ></div>
+                    </div>
+                  </div>
+            </div>
             <div class="px-auto">
                 <div class="mb-14 flex">
-                    <div id="hud">
+                    <div id="hud" class="flex  justify-between	w-full">
                         <div class="hud-item">
                             <p id="progressText" class="hud-prefix">
                                 Question
                             </p>
-                            <div id="progressBar">
-                                <div id="progressBarFull"></div>
-                            </div>
                         </div>
-                        <div class="hud-item">
-                            <p class="hud-prefix">Score:</p>
-                            <h1 class="hud-main-text" id="score"></h1>
+                        <div class="flex">
+                            <p class="">Score:</p>
+                            <h1 class="mx-2" id="score">0</h1>
                         </div>
                     </div>
 
                     <p id="progressText" class="hud-prefix"></p>
                     <!-- <p class="text-2xl mr-auto" id="questionID">Questions!</p> -->
-                    <h1 class="hud-main-text" id="score">0</h1>
+                    <h1 class="hud-main-text" id="score"></h1>
                     <div id="progressBar">
                         <div id="progressBarFull"></div>
                     </div>
                 </div>
                 <div id="answerID" class="">
-                    <h1 class="font-bold text-md mx-auto text-purple-500" id="question"></h1>
-
-                    <div class=" w-full mx-auto bg-gray-100  m-5 p-3 w-4/5 rounded-full shadow text-lg focus:text-white hover:bg-black-900 cursor-pointer">
+                    <div class="my-12">
+                        <h1 class="font-bold text-md mx-auto text-xl animate-pulse " id="question"></h1>
+                    </div>
+                    <!-- <div class=" w-full mx-auto bg-gray-100  m-5 p-3 w-4/5 rounded-full shadow text-lg focus:text-white hover:bg-black-900 cursor-pointer">
                         <p id="choice-text"   data-number="1"></p>
+                    </div> -->
+                    <div class="grid gap-4 grid-cols-2">
+                        <div class="p-6 rounded-md shadow-md cursor-pointer hover:shadow-lg ">
+                            <p id="choice-text" class="w-full h-full"   data-number="1"></p>
+                        </div>
+                        <div  class="p-6 rounded-md shadow-md cursor-pointer hover:shadow-lg ">
+                            <a id="choice-text" class="w-full h-full"  data-number="2"></a>
+                        </div>
+                        <div  class="p-6 rounded-md shadow-md cursor-pointer hover:shadow-lg ">
+                            <a id="choice-text" class="w-full h-full"  data-number="3"></a>
+                        </div>
+                        <div  class="p-6 rounded-md shadow-md cursor-pointer hover:shadow-lg ">
+                            <a id="choice-text" class="w-full h-full"  data-number="4"></a>
+                        </div>
                     </div>
-                    <div  class=" w-full mx-auto bg-gray-100  m-5 p-3 w-4/5 rounded-full shadow text-lg  focus:text-white hover:bg-black-900 cursor-pointer">
-                        <a id="choice-text" data-number="2"></a>
-                    </div>
-                    <div  class=" w-full mx-auto bg-gray-100  m-5 p-3 w-4/5 rounded-full shadow text-lg  focus:text-white hover:bg-black-900 cursor-pointer">
-                        <a id="choice-text"  data-number="3"></a>
-                    </div>
-                    <div  class=" w-full mx-auto bg-gray-100  m-5 p-3 w-4/5 rounded-full shadow text-lg  focus:text-white hover:bg-black-900 cursor-pointer">
-                        <a id="choice-text"data-number="4"></a>
-                    </div>
+                 
                 </div>
             </div>
             <div class="mt-16">
                 <div class="relative pt-1">
                     <div class="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
-                      <div id="bar" style="width: 0%" class=" shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500"></div>
+                      <div id="bar" style="width: 0%" class=" shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center"></div>
                     </div>
-                  </div>
+                </div>
             </div>
             <div>
             </div>

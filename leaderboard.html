@@ -6,19 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/21917d46d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <title>Quizzes</title>
 </head>
+<style>
+body{
 
+    background-color: #5B45C0;
+    font-family: 'Comfortaa', cursive;
+
+}
+#ranks{
+
+    background-color: #FC9C28;
+}
+#trophy{
+    color: #FC9C28;
+    font-size: 4rem;
+}
+#home{
+    background-color: #180792;
+}
+</style>
 <body>
     <div class="bg-white-700 w-full h-screen pt-60">
-       
-        <div id="quiz" class="bg-white mb-30 w-2/5 h-auto p-10 mx-auto shadow-lg rounded-2xl">
+       <!-- <div id="trophy" class="mx-auto w-full px-auto">
+            <i class="fas fa-trophy"></i>
+       </div> -->
+        <div id="quiz" class=" mb-30 w-1/5 h-auto p-10 mx-auto  rounded-2xl">
             <div>
                 <div id="highScores" class="flex-center flex-column">
 
-                    <h1 id="finalScore" class="text-md">Leaderboard</h1>
-                    <ul id="highScoresList"></ul>
-                    <a href="index.html" class="btn">Go Home <i class="fas fa-home"></i></a>
+                    <h1 id="finalScore" class="text-md text-white text-2xl">Leaderboard</h1>
+                    <ul class="mb-8" id="highScoresList"></ul>
+                    <a href="index.html" id="home" class="p-4 mt-8 text-white shadow-md rounded-md ">Go Home <i class="fas fa-home"></i></a>
         
                 </div>
             </div>

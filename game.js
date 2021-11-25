@@ -10,6 +10,7 @@ let acceptingAnswers = true
 let score = 0
 let questionCounter = 0
 let availableQuestions = []
+let timeleft = 0;
 
 
 let questions = [
@@ -71,7 +72,7 @@ getNewQuestion = () => {
     }
 
     questionCounter++
-
+    timeleft = 30;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     // progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length) // floor btafrit ceil b2ifrat
@@ -111,6 +112,17 @@ choices.forEach(choice => {
 })
 })
 
+var Timer = setInterval(function(){
+  if(timeleft <= 0){
+    // clearInterval(Timer);
+    document.getElementById("timer").innerHTML = "timeout";
+    getNewQuestion()
+} else {
+    document.getElementById("timer").innerHTML = timeleft + "s";
+  }
+  timeleft -= 1;
+  document.getElementById('timeBar').style.width = Math.floor(timeleft * 100 / 30) + "%";
+}, 1000);
 
 incrementScore = num => {
     score += num

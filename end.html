@@ -6,25 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/21917d46d7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <title>Quizzes</title>
 </head>
+<style>
+body{
+    background-color: #5B45C0;
+    font-family: 'Comfortaa', cursive;
 
+}
+#saveScoreBtn {
+    background-color: #FC9C28;
+}
+#playAgain{
+    background-color: #180792;
+}
+</style>
 <body>
     <div class="bg-white-700 w-full h-screen pt-60">
        
-        <div id="quiz" class="bg-white mb-30 w-2/5 h-auto p-10 mx-auto shadow-lg rounded-2xl">
+        <div id="quiz" class="bg-white mb-30 w-1/5 h-auto p-10 mx-auto shadow-lg rounded-2xl">
             <div>
                 <div id="end" class="flex-center flex-column">
                     <div>
                         <span class="font-bold text-lg">Final score:</span><h1 id="finalScore">0</h1>
                     </div>
-                    <form class="end-form-container my-6">
+                    <form  class="end-form-container my-16">
                         <h2 class="my-4" id="end-text">Enter your name below to save your score!</h2>
                         <input class="h-12 w-3/4 rounded-md shadow" type="text" name="name" id="username" placeholder="Enter your name">
-                        <button class="shadow rounded-md p-3 text-white bg-purple-500" id="saveScoreBtn" type="submit" onClick="saveHighScore(event)" disabled>Save</button>
+                        <button class="shadow rounded-md p-3 text-white " id="saveScoreBtn" type="submit" onClick="saveHighScore(event)" disabled>Save</button>
                     </form>
-                    <a href="game.html" class="shadow rounded-md bg-purple-500 text-white p-3">Play Again</a>
-                    <a href="index.html" class=" p-3 shadow rounded-md bg-blue-500 text-white"  >Go home <i class="fas fa-home"></i></a>
+                    <a href="game.html" id="playAgain" class="shadow rounded-md  text-white p-3">Play Again</a>
+                    <a href="index.html" style="background-color: #FC9C28;" class=" p-3 shadow rounded-md bg-blue-500 text-white"  >Go home <i class="fas fa-home"></i></a>
                 </div>
             </div>
         </div>
